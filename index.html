@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coder Video Player</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+
+     <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>  
+
+
+    <div class="container">
+        <!-- Bootstrap Card to display the image -->
+        <div class="card image-card">
+            <img src="/Images/QRcode.jpg" class="card-img-top img-fluid" alt="Image Display">
+            <div class="card-body">
+                <p  class="card-text"><b>     Donate 10 Rs. For Extra Features</b></p>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="container mt-4">
+    <h1 class="text-center scrolling-text">Welcome To Swapnil's World</h1>
+
+    <div class="row">
+        <!-- Left Panel -->
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="categoryDropdown">Choose Topic:</label>
+                <select class="form-control" id="categoryDropdown">
+                    <option value="spring-core">Spring Core</option>
+                    <option value="hibernate">Hibernate</option>
+                    <!-- Add more categories as needed -->
+                </select>
+            </div>
+
+            <div class="playlist-container" id="videoList">
+                <!-- Video list will be populated dynamically using JavaScript -->
+            </div>
+        </div>
+
+        <!-- Video Window -->
+        <div class="col-md-8">
+            <div class="video-player-container">
+                <iframe class="embed-responsive-item" id="videoPlayer" width="600" height="400" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your custom JavaScript -->
+<script src="scripts.js"></script> <!-- Include your main JavaScript file -->
+
+</body>
+</html>

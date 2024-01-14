@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Display</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Customize card style as needed */
+        .image-card {
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        .card-img-top {
+            max-height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Bootstrap Card to display the image -->
+    <div class="card image-card">
+        <img src="/Images/QRcode.jpg" class="card-img-top img-fluid" alt="Image Display">
+        <div class="card-body">
+            <p  class="card-text"><b>     Donate 10 Rs. For Extra Features</b></p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to hide the image card after a specified duration
+    function hideImageCard() {
+        const imageCard = document.querySelector('.image-card');
+        
+        // Set a timeout to hide the card after 15 seconds
+        setTimeout(() => {
+            imageCard.style.display = 'none';
+        }, 15000);
+    }
+
+    // Call the function to hide the image card on page load
+    window.addEventListener('load', hideImageCard);
+</script>
+
+</body>
+</html>
