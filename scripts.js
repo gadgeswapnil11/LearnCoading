@@ -49,8 +49,7 @@
             summary: 'Summary for Project Day 2'
         },
       
-        // Add more videos as needed
-    ];
+       ];
 
 
  // Function to update video player with selected video
